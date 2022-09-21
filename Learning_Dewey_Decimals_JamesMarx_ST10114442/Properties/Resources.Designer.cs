@@ -63,6 +63,56 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap arrow1 {
+            get {
+                object obj = ResourceManager.GetObject("arrow1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap arrow11 {
+            get {
+                object obj = ResourceManager.GetObject("arrow11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bo9 {
+            get {
+                object obj = ResourceManager.GetObject("bo9", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap correcticon34 {
+            get {
+                object obj = ResourceManager.GetObject("correcticon34", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap findCN6 {
+            get {
+                object obj = ResourceManager.GetObject("findCN6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap homeicon {
             get {
                 object obj = ResourceManager.GetObject("homeicon", resourceCulture);
@@ -103,6 +153,56 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap how2play2 {
+            get {
+                object obj = ResourceManager.GetObject("how2play2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap how2play21 {
+            get {
+                object obj = ResourceManager.GetObject("how2play21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LBA4 {
+            get {
+                object obj = ResourceManager.GetObject("LBA4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap leftbutton4real {
+            get {
+                object obj = ResourceManager.GetObject("leftbutton4real", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap myshelf3 {
+            get {
+                object obj = ResourceManager.GetObject("myshelf3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap reseticon {
             get {
                 object obj = ResourceManager.GetObject("reseticon", resourceCulture);
@@ -126,6 +226,56 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442.Properties {
         internal static System.Drawing.Bitmap reseticonblue {
             get {
                 object obj = ResourceManager.GetObject("reseticonblue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reseticony {
+            get {
+                object obj = ResourceManager.GetObject("reseticony", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shelf4 {
+            get {
+                object obj = ResourceManager.GetObject("shelf4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Testshelf {
+            get {
+                object obj = ResourceManager.GetObject("Testshelf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap whattodo1 {
+            get {
+                object obj = ResourceManager.GetObject("whattodo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap whattodo11 {
+            get {
+                object obj = ResourceManager.GetObject("whattodo11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

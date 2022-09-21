@@ -55,6 +55,18 @@
     <Compile Include="Classes\BasicUtilities.cs" />
     <Compile Include="Classes\OtherCode.cs" />
     <Compile Include="Classes\SortingAlgorithm.cs" />
+    <Compile Include="MessageBoxes\Controls_Message.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxes\Controls_Message.Designer.cs">
+      <DependentUpon>Controls_Message.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxes\Instructions_Message.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxes\Instructions_Message.Designer.cs">
+      <DependentUpon>Instructions_Message.cs</DependentUpon>
+    </Compile>
     <Compile Include="Shelf_Order.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +89,12 @@
     </Compile>
     <EmbeddedResource Include="Book_Areas.resx">
       <DependentUpon>Book_Areas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxes\Controls_Message.resx">
+      <DependentUpon>Controls_Message.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxes\Instructions_Message.resx">
+      <DependentUpon>Instructions_Message.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Shelf_Order.resx">
       <DependentUpon>Shelf_Order.cs</DependentUpon>
@@ -114,6 +132,21 @@
     <Content Include="Images\homeicon.png" />
     <Content Include="Images\prog3Blogo.PNG" />
     <Content Include="Images\shelforder.PNG" />
+    <None Include="Resources\how2play21.PNG" />
+    <None Include="Resources\how2play2.PNG" />
+    <None Include="Resources\whattodo11.PNG" />
+    <None Include="Resources\whattodo1.PNG" />
+    <None Include="Resources\LBA4.PNG" />
+    <None Include="Resources\bo9.PNG" />
+    <None Include="Resources\findCN6.PNG" />
+    <None Include="Resources\arrow11.PNG" />
+    <None Include="Resources\arrow1.PNG" />
+    <None Include="Resources\reseticony.PNG" />
+    <None Include="Resources\correcticon34.PNG" />
+    <None Include="Resources\leftbutton4real.PNG" />
+    <None Include="Resources\myshelf3.PNG" />
+    <None Include="Resources\shelf4.PNG" />
+    <None Include="Resources\Testshelf.PNG" />
     <None Include="Resources\reseticonblue.PNG" />
     <None Include="Resources\homeiconblue.PNG" />
     <None Include="Resources\reseticon yellow.PNG" />
@@ -124,6 +157,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\NewFolder1\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

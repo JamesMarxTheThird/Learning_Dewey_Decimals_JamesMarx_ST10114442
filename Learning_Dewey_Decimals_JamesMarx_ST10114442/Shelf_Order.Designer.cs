@@ -29,38 +29,23 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Shelf_Order));
-            this.CN_HomeB = new System.Windows.Forms.Button();
             this.randomCN_LV = new System.Windows.Forms.ListView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.moveCnRight = new System.Windows.Forms.Button();
-            this.moveCNLeft = new System.Windows.Forms.Button();
-            this.checkAnswersBTN = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.insaneLBL = new System.Windows.Forms.Label();
-            this.hardLBL = new System.Windows.Forms.Label();
-            this.normalLBL = new System.Windows.Forms.Label();
-            this.ezLBL = new System.Windows.Forms.Label();
+            this.how2PlayBTN = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.whatToDoBTN = new System.Windows.Forms.Button();
             this.insaneRB = new System.Windows.Forms.RadioButton();
             this.hardRB = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
             this.normalRB = new System.Windows.Forms.RadioButton();
-            this.easyRB = new System.Windows.Forms.RadioButton();
             this.setGameModeBTN = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.resetGameBTN = new System.Windows.Forms.Button();
             this.hintLBL = new System.Windows.Forms.Label();
             this.leftLBL = new System.Windows.Forms.Label();
             this.rightLBL = new System.Windows.Forms.Label();
@@ -69,31 +54,35 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
             this.amountLBL = new System.Windows.Forms.Label();
             this.resultsLBL = new System.Windows.Forms.Label();
             this.escLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.resetGameBTN = new System.Windows.Forms.Button();
+            this.checkAnswersBTN = new System.Windows.Forms.Button();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.moveCNLeft = new System.Windows.Forms.Button();
+            this.moveCnRight = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.CN_HomeB = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.countDown = new System.Windows.Forms.Timer(this.components);
+            this.timerLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
-            // 
-            // CN_HomeB
-            // 
-            this.CN_HomeB.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CN_HomeB.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.CN_HomeB.Image = global::Learning_Dewey_Decimals_JamesMarx_ST10114442.Properties.Resources.homeiconyellow;
-            this.CN_HomeB.Location = new System.Drawing.Point(12, 12);
-            this.CN_HomeB.Name = "CN_HomeB";
-            this.CN_HomeB.Size = new System.Drawing.Size(47, 45);
-            this.CN_HomeB.TabIndex = 2;
-            this.CN_HomeB.UseVisualStyleBackColor = true;
-            this.CN_HomeB.Click += new System.EventHandler(this.CN_HomeB_Click);
             // 
             // randomCN_LV
             // 
+            this.randomCN_LV.Alignment = System.Windows.Forms.ListViewAlignment.Default;
             this.randomCN_LV.AllowDrop = true;
             this.randomCN_LV.AutoArrange = false;
             this.randomCN_LV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(95)))), ((int)(((byte)(71)))));
@@ -107,148 +96,80 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
             this.randomCN_LV.TabIndex = 9;
             this.randomCN_LV.UseCompatibleStateImageBehavior = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(111, 120);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(727, 205);
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
-            // 
-            // moveCnRight
-            // 
-            this.moveCnRight.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.moveCnRight.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.moveCnRight.Image = ((System.Drawing.Image)(resources.GetObject("moveCnRight.Image")));
-            this.moveCnRight.Location = new System.Drawing.Point(488, 331);
-            this.moveCnRight.Name = "moveCnRight";
-            this.moveCnRight.Size = new System.Drawing.Size(132, 130);
-            this.moveCnRight.TabIndex = 13;
-            this.moveCnRight.UseVisualStyleBackColor = true;
-            this.moveCnRight.Click += new System.EventHandler(this.moveCnRight_Click);
-            // 
-            // moveCNLeft
-            // 
-            this.moveCNLeft.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.moveCNLeft.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.moveCNLeft.Image = ((System.Drawing.Image)(resources.GetObject("moveCNLeft.Image")));
-            this.moveCNLeft.Location = new System.Drawing.Point(331, 331);
-            this.moveCNLeft.Margin = new System.Windows.Forms.Padding(0);
-            this.moveCNLeft.Name = "moveCNLeft";
-            this.moveCNLeft.Size = new System.Drawing.Size(132, 130);
-            this.moveCNLeft.TabIndex = 14;
-            this.moveCNLeft.UseVisualStyleBackColor = true;
-            this.moveCNLeft.Click += new System.EventHandler(this.moveCNLeft_Click);
-            // 
-            // checkAnswersBTN
-            // 
-            this.checkAnswersBTN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkAnswersBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkAnswersBTN.Image = ((System.Drawing.Image)(resources.GetObject("checkAnswersBTN.Image")));
-            this.checkAnswersBTN.Location = new System.Drawing.Point(368, 528);
-            this.checkAnswersBTN.Name = "checkAnswersBTN";
-            this.checkAnswersBTN.Size = new System.Drawing.Size(104, 80);
-            this.checkAnswersBTN.TabIndex = 15;
-            this.checkAnswersBTN.UseVisualStyleBackColor = true;
-            this.checkAnswersBTN.Click += new System.EventHandler(this.checkAnswersBTN_Click);
-            // 
-            // button5
-            // 
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(65, 12);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(47, 45);
-            this.button5.TabIndex = 16;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(95)))), ((int)(((byte)(71)))));
-            this.panel1.Controls.Add(this.insaneLBL);
-            this.panel1.Controls.Add(this.hardLBL);
-            this.panel1.Controls.Add(this.normalLBL);
-            this.panel1.Controls.Add(this.ezLBL);
-            this.panel1.Controls.Add(this.insaneRB);
-            this.panel1.Controls.Add(this.hardRB);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.normalRB);
-            this.panel1.Controls.Add(this.easyRB);
-            this.panel1.Controls.Add(this.setGameModeBTN);
+            this.panel1.Controls.Add(this.how2PlayBTN);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.whatToDoBTN);
             this.panel1.Location = new System.Drawing.Point(25, 414);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(201, 212);
+            this.panel1.Size = new System.Drawing.Size(181, 212);
             this.panel1.TabIndex = 17;
             // 
-            // insaneLBL
+            // how2PlayBTN
             // 
-            this.insaneLBL.AutoSize = true;
-            this.insaneLBL.Location = new System.Drawing.Point(123, 139);
-            this.insaneLBL.Name = "insaneLBL";
-            this.insaneLBL.Size = new System.Drawing.Size(72, 39);
-            this.insaneLBL.TabIndex = 37;
-            this.insaneLBL.Text = "<--- 20 books\r\n& dissapearing \r\ncall numbers";
+            this.how2PlayBTN.Image = ((System.Drawing.Image)(resources.GetObject("how2PlayBTN.Image")));
+            this.how2PlayBTN.Location = new System.Drawing.Point(13, 138);
+            this.how2PlayBTN.Name = "how2PlayBTN";
+            this.how2PlayBTN.Size = new System.Drawing.Size(156, 55);
+            this.how2PlayBTN.TabIndex = 32;
+            this.how2PlayBTN.UseVisualStyleBackColor = true;
+            this.how2PlayBTN.Click += new System.EventHandler(this.how2PlayBTN_Click);
             // 
-            // hardLBL
+            // label6
             // 
-            this.hardLBL.AutoSize = true;
-            this.hardLBL.Location = new System.Drawing.Point(123, 113);
-            this.hardLBL.Name = "hardLBL";
-            this.hardLBL.Size = new System.Drawing.Size(69, 13);
-            this.hardLBL.TabIndex = 36;
-            this.hardLBL.Text = "<--- 20 books";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(35, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(123, 29);
+            this.label6.TabIndex = 30;
+            this.label6.Text = "OPTIONS";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // normalLBL
+            // whatToDoBTN
             // 
-            this.normalLBL.AutoSize = true;
-            this.normalLBL.Location = new System.Drawing.Point(123, 82);
-            this.normalLBL.Name = "normalLBL";
-            this.normalLBL.Size = new System.Drawing.Size(69, 13);
-            this.normalLBL.TabIndex = 35;
-            this.normalLBL.Text = "<--- 15 books";
-            // 
-            // ezLBL
-            // 
-            this.ezLBL.AutoSize = true;
-            this.ezLBL.Location = new System.Drawing.Point(123, 47);
-            this.ezLBL.Name = "ezLBL";
-            this.ezLBL.Size = new System.Drawing.Size(69, 13);
-            this.ezLBL.TabIndex = 34;
-            this.ezLBL.Text = "<--- 10 books";
+            this.whatToDoBTN.Image = ((System.Drawing.Image)(resources.GetObject("whatToDoBTN.Image")));
+            this.whatToDoBTN.Location = new System.Drawing.Point(13, 63);
+            this.whatToDoBTN.Name = "whatToDoBTN";
+            this.whatToDoBTN.Size = new System.Drawing.Size(156, 55);
+            this.whatToDoBTN.TabIndex = 31;
+            this.whatToDoBTN.UseVisualStyleBackColor = true;
+            this.whatToDoBTN.Click += new System.EventHandler(this.whatToDoBTN_Click);
             // 
             // insaneRB
             // 
             this.insaneRB.AutoSize = true;
-            this.insaneRB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.insaneRB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.insaneRB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.insaneRB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.insaneRB.Location = new System.Drawing.Point(16, 145);
+            this.insaneRB.Location = new System.Drawing.Point(49, 135);
             this.insaneRB.Name = "insaneRB";
-            this.insaneRB.Size = new System.Drawing.Size(97, 20);
+            this.insaneRB.Size = new System.Drawing.Size(88, 20);
             this.insaneRB.TabIndex = 33;
             this.insaneRB.TabStop = true;
-            this.insaneRB.Text = "Insano style";
+            this.insaneRB.Text = "Advanced";
             this.insaneRB.UseVisualStyleBackColor = false;
             // 
             // hardRB
             // 
             this.hardRB.AutoSize = true;
-            this.hardRB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.hardRB.BackColor = System.Drawing.Color.Yellow;
+            this.hardRB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.hardRB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hardRB.Location = new System.Drawing.Point(16, 113);
+            this.hardRB.Location = new System.Drawing.Point(49, 92);
             this.hardRB.Name = "hardRB";
-            this.hardRB.Size = new System.Drawing.Size(56, 20);
+            this.hardRB.Size = new System.Drawing.Size(100, 20);
             this.hardRB.TabIndex = 32;
-            this.hardRB.Text = "Hard";
+            this.hardRB.Text = "Intermediate";
             this.hardRB.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(19, 0);
+            this.label3.Location = new System.Drawing.Point(7, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(160, 29);
             this.label3.TabIndex = 0;
@@ -258,40 +179,26 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
             // normalRB
             // 
             this.normalRB.AutoSize = true;
-            this.normalRB.BackColor = System.Drawing.Color.Yellow;
+            this.normalRB.BackColor = System.Drawing.Color.LimeGreen;
+            this.normalRB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.normalRB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.normalRB.Location = new System.Drawing.Point(16, 78);
+            this.normalRB.Location = new System.Drawing.Point(49, 49);
             this.normalRB.Name = "normalRB";
             this.normalRB.Size = new System.Drawing.Size(70, 20);
             this.normalRB.TabIndex = 31;
             this.normalRB.Text = "Normal\r\n";
             this.normalRB.UseVisualStyleBackColor = false;
-            this.normalRB.CheckedChanged += new System.EventHandler(this.normalRB_CheckedChanged);
-            // 
-            // easyRB
-            // 
-            this.easyRB.AutoSize = true;
-            this.easyRB.BackColor = System.Drawing.Color.Lime;
-            this.easyRB.Checked = true;
-            this.easyRB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.easyRB.Location = new System.Drawing.Point(16, 43);
-            this.easyRB.Name = "easyRB";
-            this.easyRB.Size = new System.Drawing.Size(57, 20);
-            this.easyRB.TabIndex = 30;
-            this.easyRB.TabStop = true;
-            this.easyRB.Text = "Easy";
-            this.easyRB.UseVisualStyleBackColor = false;
             // 
             // setGameModeBTN
             // 
             this.setGameModeBTN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.setGameModeBTN.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.setGameModeBTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.setGameModeBTN.Location = new System.Drawing.Point(40, 181);
+            this.setGameModeBTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.setGameModeBTN.Location = new System.Drawing.Point(11, 173);
             this.setGameModeBTN.Name = "setGameModeBTN";
-            this.setGameModeBTN.Size = new System.Drawing.Size(125, 28);
+            this.setGameModeBTN.Size = new System.Drawing.Size(161, 36);
             this.setGameModeBTN.TabIndex = 29;
-            this.setGameModeBTN.Text = "---   Set mode  ---";
+            this.setGameModeBTN.Text = "--- Set mode ---";
             this.setGameModeBTN.UseVisualStyleBackColor = true;
             this.setGameModeBTN.Click += new System.EventHandler(this.setGameModeBTN_Click);
             // 
@@ -319,70 +226,18 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
     " button to start over.";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(151, 283);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(646, 33);
-            this.pictureBox2.TabIndex = 21;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(12, 414);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(227, 212);
-            this.pictureBox3.TabIndex = 22;
-            this.pictureBox3.TabStop = false;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(95)))), ((int)(((byte)(71)))));
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Location = new System.Drawing.Point(726, 414);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.normalRB);
+            this.panel2.Controls.Add(this.hardRB);
+            this.panel2.Controls.Add(this.insaneRB);
+            this.panel2.Controls.Add(this.setGameModeBTN);
+            this.panel2.Location = new System.Drawing.Point(746, 414);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(201, 212);
+            this.panel2.Size = new System.Drawing.Size(181, 212);
             this.panel2.TabIndex = 18;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(40, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(124, 29);
-            this.label6.TabIndex = 30;
-            this.label6.Text = "RESULTS";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(712, 414);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(227, 212);
-            this.pictureBox4.TabIndex = 23;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(10, 201);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(95, 50);
-            this.pictureBox5.TabIndex = 24;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(844, 201);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(95, 50);
-            this.pictureBox6.TabIndex = 25;
-            this.pictureBox6.TabStop = false;
             // 
             // label4
             // 
@@ -403,27 +258,6 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
             this.label5.Size = new System.Drawing.Size(76, 15);
             this.label5.TabIndex = 27;
             this.label5.Text = "999.999 ZZZ";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(359, 519);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(231, 97);
-            this.pictureBox7.TabIndex = 28;
-            this.pictureBox7.TabStop = false;
-            // 
-            // resetGameBTN
-            // 
-            this.resetGameBTN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.resetGameBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.resetGameBTN.Image = ((System.Drawing.Image)(resources.GetObject("resetGameBTN.Image")));
-            this.resetGameBTN.Location = new System.Drawing.Point(478, 527);
-            this.resetGameBTN.Name = "resetGameBTN";
-            this.resetGameBTN.Size = new System.Drawing.Size(104, 80);
-            this.resetGameBTN.TabIndex = 29;
-            this.resetGameBTN.UseVisualStyleBackColor = true;
-            this.resetGameBTN.Click += new System.EventHandler(this.resetGameBTN_Click);
             // 
             // hintLBL
             // 
@@ -473,7 +307,7 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
             // amountLBL
             // 
             this.amountLBL.AutoSize = true;
-            this.amountLBL.Location = new System.Drawing.Point(41, 374);
+            this.amountLBL.Location = new System.Drawing.Point(754, 376);
             this.amountLBL.Name = "amountLBL";
             this.amountLBL.Size = new System.Drawing.Size(163, 26);
             this.amountLBL.TabIndex = 35;
@@ -482,11 +316,12 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
             // resultsLBL
             // 
             this.resultsLBL.AutoSize = true;
-            this.resultsLBL.Location = new System.Drawing.Point(746, 374);
+            this.resultsLBL.Location = new System.Drawing.Point(46, 372);
             this.resultsLBL.Name = "resultsLBL";
-            this.resultsLBL.Size = new System.Drawing.Size(163, 26);
+            this.resultsLBL.Size = new System.Drawing.Size(141, 39);
             this.resultsLBL.TabIndex = 36;
-            this.resultsLBL.Text = "A run down of your results shown\r\nafter you completed the activity";
+            this.resultsLBL.Text = "Instructions and information \r\nabout the app to further help\r\nany one stuck on an" +
+    "y point";
             // 
             // escLabel
             // 
@@ -497,12 +332,164 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
             this.escLabel.TabIndex = 37;
             this.escLabel.Text = "[Esc]";
             // 
+            // resetGameBTN
+            // 
+            this.resetGameBTN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.resetGameBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.resetGameBTN.Image = global::Learning_Dewey_Decimals_JamesMarx_ST10114442.Properties.Resources.reseticony;
+            this.resetGameBTN.Location = new System.Drawing.Point(478, 527);
+            this.resetGameBTN.Name = "resetGameBTN";
+            this.resetGameBTN.Size = new System.Drawing.Size(104, 80);
+            this.resetGameBTN.TabIndex = 29;
+            this.resetGameBTN.UseVisualStyleBackColor = true;
+            this.resetGameBTN.Click += new System.EventHandler(this.resetGameBTN_Click);
+            // 
+            // checkAnswersBTN
+            // 
+            this.checkAnswersBTN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.checkAnswersBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkAnswersBTN.Image = global::Learning_Dewey_Decimals_JamesMarx_ST10114442.Properties.Resources.correcticon34;
+            this.checkAnswersBTN.Location = new System.Drawing.Point(368, 528);
+            this.checkAnswersBTN.Name = "checkAnswersBTN";
+            this.checkAnswersBTN.Size = new System.Drawing.Size(104, 80);
+            this.checkAnswersBTN.TabIndex = 15;
+            this.checkAnswersBTN.UseVisualStyleBackColor = true;
+            this.checkAnswersBTN.Click += new System.EventHandler(this.checkAnswersBTN_Click);
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(359, 519);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(231, 97);
+            this.pictureBox7.TabIndex = 28;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::Learning_Dewey_Decimals_JamesMarx_ST10114442.Properties.Resources.arrow11;
+            this.pictureBox6.Location = new System.Drawing.Point(844, 201);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(98, 50);
+            this.pictureBox6.TabIndex = 25;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Learning_Dewey_Decimals_JamesMarx_ST10114442.Properties.Resources.arrow1;
+            this.pictureBox5.Location = new System.Drawing.Point(10, 201);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(95, 50);
+            this.pictureBox5.TabIndex = 24;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Learning_Dewey_Decimals_JamesMarx_ST10114442.Properties.Resources.Testshelf;
+            this.pictureBox3.Location = new System.Drawing.Point(12, 414);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(207, 212);
+            this.pictureBox3.TabIndex = 22;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Learning_Dewey_Decimals_JamesMarx_ST10114442.Properties.Resources.myshelf3;
+            this.pictureBox2.Location = new System.Drawing.Point(151, 283);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(646, 33);
+            this.pictureBox2.TabIndex = 21;
+            this.pictureBox2.TabStop = false;
+            // 
+            // button5
+            // 
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.Location = new System.Drawing.Point(65, 12);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(47, 45);
+            this.button5.TabIndex = 16;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // moveCNLeft
+            // 
+            this.moveCNLeft.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.moveCNLeft.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.moveCNLeft.Image = ((System.Drawing.Image)(resources.GetObject("moveCNLeft.Image")));
+            this.moveCNLeft.Location = new System.Drawing.Point(331, 331);
+            this.moveCNLeft.Margin = new System.Windows.Forms.Padding(0);
+            this.moveCNLeft.Name = "moveCNLeft";
+            this.moveCNLeft.Size = new System.Drawing.Size(132, 130);
+            this.moveCNLeft.TabIndex = 14;
+            this.moveCNLeft.UseVisualStyleBackColor = true;
+            this.moveCNLeft.Click += new System.EventHandler(this.moveCNLeft_Click);
+            // 
+            // moveCnRight
+            // 
+            this.moveCnRight.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.moveCnRight.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.moveCnRight.Image = global::Learning_Dewey_Decimals_JamesMarx_ST10114442.Properties.Resources.leftbutton4real;
+            this.moveCnRight.Location = new System.Drawing.Point(488, 331);
+            this.moveCnRight.Name = "moveCnRight";
+            this.moveCnRight.Size = new System.Drawing.Size(132, 130);
+            this.moveCnRight.TabIndex = 13;
+            this.moveCnRight.UseVisualStyleBackColor = true;
+            this.moveCnRight.Click += new System.EventHandler(this.moveCnRight_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Learning_Dewey_Decimals_JamesMarx_ST10114442.Properties.Resources.Testshelf;
+            this.pictureBox1.Location = new System.Drawing.Point(111, 120);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(727, 205);
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
+            // CN_HomeB
+            // 
+            this.CN_HomeB.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CN_HomeB.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.CN_HomeB.Image = global::Learning_Dewey_Decimals_JamesMarx_ST10114442.Properties.Resources.homeiconyellow;
+            this.CN_HomeB.Location = new System.Drawing.Point(12, 12);
+            this.CN_HomeB.Name = "CN_HomeB";
+            this.CN_HomeB.Size = new System.Drawing.Size(47, 45);
+            this.CN_HomeB.TabIndex = 2;
+            this.CN_HomeB.UseVisualStyleBackColor = true;
+            this.CN_HomeB.Click += new System.EventHandler(this.CN_HomeB_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Learning_Dewey_Decimals_JamesMarx_ST10114442.Properties.Resources.Testshelf;
+            this.pictureBox4.Location = new System.Drawing.Point(732, 414);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(207, 212);
+            this.pictureBox4.TabIndex = 23;
+            this.pictureBox4.TabStop = false;
+            // 
+            // countDown
+            // 
+            this.countDown.Interval = 1000;
+            this.countDown.Tick += new System.EventHandler(this.countDown_Tick);
+            // 
+            // timerLabel
+            // 
+            this.timerLabel.AutoSize = true;
+            this.timerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timerLabel.Location = new System.Drawing.Point(426, 477);
+            this.timerLabel.Name = "timerLabel";
+            this.timerLabel.Size = new System.Drawing.Size(60, 24);
+            this.timerLabel.TabIndex = 38;
+            this.timerLabel.Text = "label7";
+            // 
             // Shelf_Order
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.NavajoWhite;
             this.ClientSize = new System.Drawing.Size(951, 638);
+            this.Controls.Add(this.timerLabel);
             this.Controls.Add(this.escLabel);
             this.Controls.Add(this.resultsLBL);
             this.Controls.Add(this.amountLBL);
@@ -532,22 +519,24 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
             this.Controls.Add(this.CN_HomeB);
             this.Controls.Add(this.pictureBox4);
             this.KeyPreview = true;
+            this.MaximumSize = new System.Drawing.Size(967, 677);
+            this.MinimumSize = new System.Drawing.Size(967, 677);
             this.Name = "Shelf_Order";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Shelf order";
             this.Load += new System.EventHandler(this.Call_Numbers_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Shelf_Order_KeyDown);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -569,7 +558,6 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button setGameModeBTN;
@@ -585,13 +573,13 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
         private System.Windows.Forms.Label resultsLBL;
         private System.Windows.Forms.RadioButton hardRB;
         private System.Windows.Forms.RadioButton normalRB;
-        private System.Windows.Forms.RadioButton easyRB;
         private System.Windows.Forms.RadioButton insaneRB;
-        private System.Windows.Forms.Label normalLBL;
-        private System.Windows.Forms.Label ezLBL;
-        private System.Windows.Forms.Label insaneLBL;
-        private System.Windows.Forms.Label hardLBL;
         private System.Windows.Forms.Label escLabel;
         public System.Windows.Forms.ListView randomCN_LV;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Button whatToDoBTN;
+        private System.Windows.Forms.Button how2PlayBTN;
+        private System.Windows.Forms.Timer countDown;
+        private System.Windows.Forms.Label timerLabel;
     }
 }

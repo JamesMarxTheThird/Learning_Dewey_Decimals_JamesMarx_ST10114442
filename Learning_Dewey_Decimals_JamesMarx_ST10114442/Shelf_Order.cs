@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Learning_Dewey_Decimals_JamesMarx_ST10114442.Classes;
+using Learning_Dewey_Decimals_JamesMarx_ST10114442.MessageBoxes;
 
 
 namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
@@ -21,7 +22,7 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
         //Global variables
 
         // A random object that is referenced to generate random numbers, letters and colours
-        private static Random random = new Random(); 
+        private static Random random = new Random();
 
         //Creating random colour variable
         private static Color randomClr;
@@ -49,7 +50,12 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
         //Other list that will store the call numbers generated in that session in the correct order
         public List<string> sortedCallNumbers = new List<string>();
 
+        //Making gloabl objects of the other forms
         BasicUtilities BU = new BasicUtilities();
+        Controls_Message CM = new Controls_Message();
+        Instructions_Message IM = new Instructions_Message();
+
+        public static int timerCount = 0;
 
         //-----------------------------------------------------------------------\\
 
@@ -77,9 +83,9 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
         /// </summary>
         public void display_book_shapes()
         {
-             
+
             randomCN_LV.View = View.Tile;
-            randomCN_LV.Alignment = ListViewAlignment.Default;
+            randomCN_LV.Alignment = ListViewAlignment.Left;
             randomCN_LV.OwnerDraw = true;
             randomCN_LV.AllowDrop = true;
             randomCN_LV.DrawItem += listView1_DrawItem;
@@ -91,56 +97,58 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
         //-----------------------------------------------------------------------\\
 
         /// <summary>
-        /// 
+        /// This method adds the call numbers for the normal game mode into our list view and list
         /// </summary>
         public void display_call_numbers()
         {
 
+            //Calling 10 random call numbers
             BU.createRandomCallNumbers();
 
             foreach (string CNItem in BU.unsortedCallNumbers_BU)
             {
+                //Adding to the 'Shelf' or listview
                 randomCN_LV.Items.Add(CNItem);
             }
-
-            /*
-            //For loop that runs 10 tmies by default, and adds a new call number to the list view
-            for (int i = 0; i < booksDisplayed; i++)
-            {
-
-                //Generates the first 3 digit number
-                int generatedCN = random.Next(0, 1000);
-
-                //Generates the second 3 digit number
-                int generateddCNDecimal = random.Next(0, 1000);
-
-                //Generates the 3 letters
-                char randomChar = (char)random.Next('A', 'Z');
-                char randomChar2 = (char)random.Next('A', 'Z');
-                char randomChar3 = (char)random.Next('A', 'Z');
-
-                //Putting the call number into one string
-                fullCN = generatedCN.ToString() + "." + generateddCNDecimal.ToString() + "\n" + " " + randomChar + randomChar2 + randomChar3;
-
-                //Adding the full call number to the list view
-                randomCN_LV.Items.Add(fullCN);
-
-                unsortedCallNumbers.Clear();
-                unsortedCallNumbers.Add(fullCN);
-                sortedCallNumbers.Add(fullCN);
-                // top5_LV.Items.Add(fullCN);
-                sortingCallNumbersASC();
-
-                getSortedList();
-
-            }
-            */
 
         }
 
         //-----------------------------------------------------------------------\\
 
-        //
+        /// <summary>
+        /// This method adds the call numbers for the intermediate game mode into our list view and list
+        /// </summary>
+        public void display_intermediate_call_numbers()
+        {
+
+            //Calling 10 random, intermediate mode call nunmbers : the same first, second and fourth digit
+            BU.intermediateMode();
+
+            //Loop to display call numbers in intermediate mode
+            foreach (string CNItem in BU.unsortedCallNumbers_BU)
+            {
+                randomCN_LV.Items.Add(CNItem);
+            }
+        }
+
+        //-----------------------------------------------------------------------\\
+
+        /// <summary>
+        /// This method adds the call numbers for the advanced game mode into our list view and list
+        /// </summary>
+        public void display_advanced_call_numbers()
+        {
+            //Calling 13 random, advanced mode call nunmbers : the same first, fourth, seventhg and eighth digits
+            BU.advancedMode();
+
+            //Loop to display call numbers in advanced mode
+            foreach (string CNItem in BU.unsortedCallNumbers_BU)
+            {
+                randomCN_LV.Items.Add(CNItem);
+            }
+        }
+
+        //Toggle hint labels off
         public void hideLabels()
         {
             leftLBL.Hide();
@@ -149,17 +157,14 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
             resetLBL.Hide();
             resultsLBL.Hide();
             tickLBL.Hide();
-            ezLBL.Hide();
-            normalLBL.Hide();
-            hardLBL.Hide();
-            insaneLBL.Hide();
             escLabel.Hide();
+            timerLabel.Hide();
             hintLBL.Show();
         }
 
         //-----------------------------------------------------------------------\\
 
-        //
+        //Toggle hint labels on
         public void showLabels()
         {
             leftLBL.Show();
@@ -168,10 +173,6 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
             resetLBL.Show();
             resultsLBL.Show();
             tickLBL.Show();
-            ezLBL.Show();
-            normalLBL.Show();
-            hardLBL.Show();
-            insaneLBL.Show();
             escLabel.Show();
             hintLBL.Hide();
         }
@@ -192,7 +193,7 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
             //
             try
             {
-                
+
                 e.Graphics.FillRectangle(Brushes.IndianRed, e.Bounds);
 
                 textColor = Color.Black;
@@ -203,46 +204,6 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
                 TextRenderer.DrawText(e.Graphics, e.Item.Text, randomCN_LV.Font, e.Bounds,
                                       textColor, Color.Empty,
                                       TextFormatFlags.HorizontalCenter | TextFormatFlags.VerticalCenter); //
-                /*
-                foreach (ListViewItem LV1 in randomCN_LV.Items)
-                {
-                    Pen blackPen = new Pen(Color.Black, 3);
-                    PointF point1 = new PointF(100.0F, 100.0F);
-                    PointF point2 = new PointF(147.0F, 100.0F);
-                   // Point p1 = new Point(10);
-                   // Point p2 = new Point(190);
-
-                    
-                  // e.Graphics.DrawLine()
-
-                    e.Graphics.DrawLine(blackPen, point1, point2);
-                }
-                */
-
-                //Setting the brush property for out rectangle / book
-                //e.Graphics.FillRectangle(SystemBrushes.Highlight, e.Bounds);
-
-                //Setting the color of the rectangle
-
-
-                //Performing a color swap as a book is clicked on the shelf
-                /*
-                if ((e.State & ListViewItemStates.Focused) != 0)
-                {
-
-                     //This sets the textcolor of the call numbers to a completely random one 
-                     //As its initially clicked on
-                     randomClr = Color.FromArgb(random.Next(256), random.Next(256), random.Next(256));
-                     textColor = randomClr;
-
-                }
-                else
-                {
-                    // e.Graphics.FillRectangle(Brushes.White, e.Bounds);
-                    //Setting it back to default color 
-                    textColor = Color.Black;
-                }
-                */
 
             }
             catch (Exception ex)
@@ -254,6 +215,7 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
 
         //-----------------------------------------------------------------------\\
 
+        //
         private void Call_Numbers_Load(object sender, EventArgs e)
         {
 
@@ -311,7 +273,7 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
             //it becomes frustrating and repetitive. Disabling this keeps the flow going.
             catch (Exception Ex)
             {
-               // MessageBox.Show(Ex.ToString());
+                // MessageBox.Show(Ex.ToString());
             }
 
         }
@@ -361,7 +323,7 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
             }
             catch (Exception Ex)
             {
-               // MessageBox.Show(Ex.ToString());
+                // MessageBox.Show(Ex.ToString());
             }
 
         }
@@ -375,17 +337,17 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
         /// <param name="e"></param>
         private void button5_Click(object sender, EventArgs e)
         {
-            
 
             if (BTNchecked != true)
             {
                 showLabels();
                 BTNchecked = true;
+                //MessageBox.Show("Please note the game is fully playable through mouse input, but various keyboard controlls can be used\nindicated by the '[]' in the hint labels. ");
             }
             else
             {
                 hideLabels();
-                BTNchecked = false;                        
+                BTNchecked = false;
             }
 
         }
@@ -393,94 +355,122 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
         //-----------------------------------------------------------------------\\
 
         /// <summary>
-        /// 
+        /// This button checks which game modes is selected, and sets the game conditions based off the mode
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void setGameModeBTN_Click(object sender, EventArgs e)
         {
 
-            if (easyRB.Checked)
+            //Normal game mode
+            if (normalRB.Checked)
             {
 
+                BasicUtilities.booksDisplayed_BU = 10;
+
+                //Completely random call numbers
+                resetGameBTN.PerformClick();
+                countDown.Stop();
+                timerLabel.Hide();
+
             }
-            else if (normalRB.Checked)
-            {
-                //resetGameBTN.PerformClick();
-                booksDisplayed = 15;
-            }
+
+            //Intermediate game mode
             else if (hardRB.Checked)
             {
-                booksDisplayed = 20;
+
+                BasicUtilities.booksDisplayed_BU = 10;
+
+                //Clearing the listview of the current books
+                randomCN_LV.Clear();
+                BU.unsortedCallNumbers_BU.Clear();
+
+                //Reusing methods to randomly generate call numbers and draw books
+                display_book_shapes();
+
+                //Call numbers with the same first, second and fourth digit
+                display_intermediate_call_numbers();
+
+                //Displaying the label with the timer, setting the time to 30s and starting it
+                timerLabel.Show();
+                timerCount = 40;
+                countDown.Start();
+                
+
             }
             else if (insaneRB.Checked)
             {
-                booksDisplayed = 20;
+
+                BasicUtilities.booksDisplayed_BU = 13;
+
+                //Clearing the listview of the current books
+                randomCN_LV.Clear();
+                BU.unsortedCallNumbers_BU.Clear();
+
+                //Reusing methods to randomly generate call numbers and draw books
+                display_book_shapes();
+
+                //Call numbers with the same first, fourth, seventhg and eighth digits
+                display_advanced_call_numbers();
+
+                //Displaying the label with the timer, setting the time to 20s and starting it
+                timerLabel.Show();
+                timerCount = 25;
+                countDown.Start();
+
             }
 
         }
 
         //-----------------------------------------------------------------------\\
 
-        private void normalRB_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        //-----------------------------------------------------------------------\\
-
-        public void SplitAndSortMethod()
+        /// <summary>
+        /// Ascendingly Ordering the list of call numbers then comparing that sequence to the users sequence once check button has been clicked
+        /// This compares strings with the format {1}{2}{3}.{4}{5}{6} {A}{B}{C}, and will sort them based on all digits and letters in the string
+        /// </summary>
+        public void OrderByAndCompare()
         {
 
             try
             {
-                /*
-                BU.unsortedCallNumbers_BU = BU.unsortedCallNumbers_BU
-                .Select(x => x.Split(new char[] { '.' }))
-                .Select(x =>
-                    {
-                        string[] lastParts = x[2].Split(new char[] { ' ' });
-                        return new { a = Convert.ToInt32(x[0]), b = Convert.ToInt32(x[1]), c = lastParts[0] };
-                    })
-                    .OrderBy(x => x.a).ThenBy(x => x.b).ThenBy(x => x.c)
-                    .Select(x => string.Format("{123}.{456} {A}{B}{C}", x.a, x.b, x.c))
-                    .ToList();
-                
-                BU.unsortedCallNumbers_BU.Reverse();
-                foreach (string str in BU.unsortedCallNumbers_BU)
-                {
-                    BU.sortedCallNumbers_BU.Add(str);
-                    
-                }
-                
-                foreach (string items in BU.unsortedCallNumbers_BU)
-                {
-                    string[] separator = new string[] { "." };
-                    string[] separator2 = new string[] { " " };
-                    var sortedItems = BU.unsortedCallNumbers_BU
-                        .OrderByDescending(s => int.Parse(s.Split(separator, StringSplitOptions.None)[1]))
-                        .OrderByDescending(s => int.Parse(s.Split(separator, StringSplitOptions.None)[0]))
-                        .ToString();
-                    listBox1.Items.Add(sortedItems);
-                }
-                */
-                foreach (string items in BU.unsortedCallNumbers_BU)
-                {
-                    string awe = BU.unsortedCallNumbers_BU
-                .OrderByDescending(v => string.Concat(v.Split('.').Select(x => x.PadLeft(3, '0'))))
-                .ToString();
 
+                //This loop iterates depending on the amount of books in our listview
+                foreach (ListViewItem unsortedCallNumbers in randomCN_LV.Items)
+                {
+
+                    //Our alterante list adds the listview item upon iteration.
+                    //Listview item is converted to a text value using linq and inputs it to list
+                    BU.sortedCallNumbers_BU = randomCN_LV.Items.Cast<ListViewItem>().Select(item => item.Text).ToList();
+
+                }
+
+                //Using Linq to create a Var that represents a list of the call numbers in Ascending order
+                //Var is the perfect element to incoporate linq, which can then be used to compare the users sequence to the correct one
+                var sortedCN_ASC = BU.unsortedCallNumbers_BU.OrderBy(x => x);
+                //Considering "OrderBy causes the returned sequence or subsequence (group) to be sorted in either ascending or descending order."
+                //https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/orderby-clause
+                //We can easily compare the sequence of our call number list to the sequence set on the ListView by clicking the check button
+
+                //If the list of values in an order specified by the user has the same sequence as the ascending list ordered above the message below will show
+                if (BU.sortedCallNumbers_BU.SequenceEqual(sortedCN_ASC))
+                {
+                    countDown.Stop();
+                    
+                    MessageBox.Show("Well done! you've sorted the call numbers " + "\nConsider the other game modes or more Information on the Home Page!");
                     
                 }
+
+                //Error message for the user
+                else
+                {
+                    MessageBox.Show("The books are not in the correct order! \nFeel free to reset the game or play another game mode");
+                }                
 
             }
             catch (Exception e)
             {
                 MessageBox.Show(e.ToString());
             }
-
-
-
 
         }
 
@@ -491,23 +481,7 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
         /// <param name="e"></param>
         private void checkAnswersBTN_Click(object sender, EventArgs e)
         {
-
-            //SortingAlgorithm SA = new SortingAlgorithm();
-            SplitAndSortMethod();
-
-            /*           
-            randomCN_LV.Sort();
-            sortedCallNumbers.Sort();
-            if (randomCN_LV.Items.ToString() == sortedCallNumbers.ToString())
-            {
-                MessageBox.Show("awe poes");
-            }
-            else
-            {
-                MessageBox.Show("rahhhhhhhhhhhhhhhhhhhhh");
-            }
-            */
-
+            OrderByAndCompare();
         }
 
         //-----------------------------------------------------------------------\\
@@ -531,16 +505,20 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
                 moveCnRight.PerformClick();
             }
 
+            /*
             if (e.KeyCode == Keys.Enter)
             {
                 checkAnswersBTN.PerformClick();
             }
+            */
 
+            //Escape button takes user back to the home screen
             if (e.KeyCode == Keys.Escape)
             {
                 CN_HomeB.PerformClick();
             }
 
+            //F5 key refresehes the game with new numbers based on the game mode selected
             if (e.KeyCode == Keys.F5)
             {
                 resetGameBTN.PerformClick();
@@ -556,18 +534,130 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
         /// <param name="e"></param>
         private void resetGameBTN_Click(object sender, EventArgs e)
         {
-            //Clearing the listview of the current books
-            randomCN_LV.Clear();
-            BU.unsortedCallNumbers_BU.Clear();
+                
+            if (normalRB.Checked)
+            {
+                BasicUtilities.booksDisplayed_BU = 10;
 
-            //Reusing methods to randomly generate call numbers and draw books
-            display_book_shapes();
-            display_call_numbers();
+                //Clearing the listview of the current books
+                randomCN_LV.Clear();
+                BU.unsortedCallNumbers_BU.Clear();
+
+                //Reusing methods to randomly generate call numbers and draw books
+                display_book_shapes();
+                display_call_numbers();
+            }
+
+            else if (hardRB.Checked)
+            {
+                BasicUtilities.booksDisplayed_BU = 10;
+
+                //Clearing the listview of the current books
+                randomCN_LV.Clear();
+                BU.unsortedCallNumbers_BU.Clear();
+
+                //Reusing methods to randomly generate call numbers and draw books
+                display_book_shapes();
+
+                //Call numbers with the same first, second and fourth digit
+                display_intermediate_call_numbers();
+
+                //Displaying the label with the timer, setting the time to 30s and starting it
+                timerLabel.Show();
+                timerCount = 30;
+                countDown.Start();
+
+            }
+
+            else if (insaneRB.Checked)
+            {
+                BasicUtilities.booksDisplayed_BU = 13;
+
+                //Clearing the listview of the current books
+                randomCN_LV.Clear();
+                BU.unsortedCallNumbers_BU.Clear();
+
+                //Reusing methods to randomly generate call numbers and draw books
+                display_book_shapes();
+
+                //Call numbers with the same first, fourth, seventhg and eighth digits
+                display_advanced_call_numbers();
+
+                //Displaying the label with the timer, setting the time to 20s and starting it
+                timerLabel.Show();
+                timerCount = 20;
+                countDown.Start();
+
+            }
+            else
+            {
+
+                BasicUtilities.booksDisplayed_BU = 10;
+                //Clearing the listview of the current books
+                randomCN_LV.Clear();
+                BU.unsortedCallNumbers_BU.Clear();
+
+                //Reusing methods to randomly generate call numbers and draw books
+                display_book_shapes();
+                display_call_numbers();
+
+            }          
 
         }
 
+        /// <summary>
+        /// This button brings us a custom message box exaplning all background information about this game
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void whatToDoBTN_Click(object sender, EventArgs e)
+        {
+            string message = Instructions_Message.ShowBox("Custom MessageBox ?", " New Message Box");
+            if (message.Equals("1"))
+            {
+                IM.Hide();
+            }
 
-        //-----------------------------------------------------------------------\\
+        }
 
+        /// <summary>
+        /// This button brings us a custom message box showing the user the controls to play the game
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void how2PlayBTN_Click(object sender, EventArgs e)
+        {         
+
+            string message = Controls_Message.ShowBox("Custom MessageBox ?", " New Message Box");
+            if (message.Equals("1"))
+            {
+                CM.Hide();
+            }
+        }
+
+        /// <summary>
+        /// Sets the label text to the correct time per tick, based on the interval of 1000ms (1s) set in the properties
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void countDown_Tick(object sender, EventArgs e)
+        {
+
+            //Setting the label text to the current time
+            timerLabel.Text = "Time left: " + timerCount--.ToString();
+
+            //Allowing the user to restart if they don't make the count down
+            if (timerCount < 0)
+            {
+                countDown.Stop();
+                MessageBox.Show("You ran out of time before sorting the books!");
+                resetGameBTN.PerformClick();
+
+            }
+            if (timerCount == 10)
+            {
+
+            }
+        }
     }
 }

@@ -30,18 +30,7 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home_Form));
-            this.label2 = new System.Windows.Forms.Label();
-            this.shelfOrderBTN = new System.Windows.Forms.Button();
-            this.callNumbersBTN = new System.Windows.Forms.Button();
-            this.bookAreasBTN = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -50,88 +39,24 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.posterLink = new System.Windows.Forms.LinkLabel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.callNumbersBTN = new System.Windows.Forms.Button();
+            this.shelfOrderBTN = new System.Windows.Forms.Button();
+            this.bookAreasBTN = new System.Windows.Forms.Button();
             this.panel9.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label2
-            // 
-            this.label2.Location = new System.Drawing.Point(32, 278);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(202, 77);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "The shelf order activity lets you\r\nre-organize books that are randomly \r\nplaced o" +
-    "n a shelf. The purpose is to\r\nhelp one learn the order of the dewey\r\ndecimal sys" +
-    "tem from 0 - 999";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // shelfOrderBTN
-            // 
-            this.shelfOrderBTN.Image = ((System.Drawing.Image)(resources.GetObject("shelfOrderBTN.Image")));
-            this.shelfOrderBTN.Location = new System.Drawing.Point(308, 387);
-            this.shelfOrderBTN.Name = "shelfOrderBTN";
-            this.shelfOrderBTN.Size = new System.Drawing.Size(192, 151);
-            this.shelfOrderBTN.TabIndex = 5;
-            this.shelfOrderBTN.UseVisualStyleBackColor = true;
-            this.shelfOrderBTN.Click += new System.EventHandler(this.shelfOrderBTN_Click);
-            // 
-            // callNumbersBTN
-            // 
-            this.callNumbersBTN.Image = ((System.Drawing.Image)(resources.GetObject("callNumbersBTN.Image")));
-            this.callNumbersBTN.Location = new System.Drawing.Point(35, 387);
-            this.callNumbersBTN.Name = "callNumbersBTN";
-            this.callNumbersBTN.Size = new System.Drawing.Size(192, 151);
-            this.callNumbersBTN.TabIndex = 4;
-            this.callNumbersBTN.UseVisualStyleBackColor = true;
-            this.callNumbersBTN.Click += new System.EventHandler(this.callNumbersBTN_Click);
-            // 
-            // bookAreasBTN
-            // 
-            this.bookAreasBTN.Image = ((System.Drawing.Image)(resources.GetObject("bookAreasBTN.Image")));
-            this.bookAreasBTN.Location = new System.Drawing.Point(587, 387);
-            this.bookAreasBTN.Name = "bookAreasBTN";
-            this.bookAreasBTN.Size = new System.Drawing.Size(192, 151);
-            this.bookAreasBTN.TabIndex = 6;
-            this.bookAreasBTN.UseVisualStyleBackColor = true;
-            this.bookAreasBTN.Click += new System.EventHandler(this.bookAreasBTN_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel1.Location = new System.Drawing.Point(35, 358);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(192, 5);
-            this.panel1.TabIndex = 9;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel2.Location = new System.Drawing.Point(308, 358);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(192, 5);
-            this.panel2.TabIndex = 10;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel3.Location = new System.Drawing.Point(587, 358);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(192, 5);
-            this.panel3.TabIndex = 10;
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(134, 116);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(527, 54);
-            this.label5.TabIndex = 11;
-            this.label5.Text = resources.GetString("label5.Text");
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel4
             // 
@@ -140,31 +65,6 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(271, 5);
             this.panel4.TabIndex = 11;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel5.Location = new System.Drawing.Point(256, 232);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(5, 320);
-            this.panel5.TabIndex = 12;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel6.Location = new System.Drawing.Point(541, 232);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(5, 320);
-            this.panel6.TabIndex = 13;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel7.Location = new System.Drawing.Point(176, 232);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(160, 5);
-            this.panel7.TabIndex = 12;
             // 
             // panel9
             // 
@@ -261,6 +161,33 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
             this.panel12.Size = new System.Drawing.Size(5, 24);
             this.panel12.TabIndex = 14;
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel5.Location = new System.Drawing.Point(256, 232);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(5, 320);
+            this.panel5.TabIndex = 12;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(134, 116);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(527, 54);
+            this.label5.TabIndex = 11;
+            this.label5.Text = resources.GetString("label5.Text");
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel6.Location = new System.Drawing.Point(541, 232);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(5, 320);
+            this.panel6.TabIndex = 13;
+            // 
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.SystemColors.ActiveBorder;
@@ -285,6 +212,22 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
             this.panel8.Size = new System.Drawing.Size(160, 5);
             this.panel8.TabIndex = 13;
             // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel7.Location = new System.Drawing.Point(176, 232);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(160, 5);
+            this.panel7.TabIndex = 12;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel3.Location = new System.Drawing.Point(587, 358);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(192, 5);
+            this.panel3.TabIndex = 10;
+            // 
             // posterLink
             // 
             this.posterLink.AutoSize = true;
@@ -296,6 +239,25 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
             this.posterLink.TabStop = true;
             this.posterLink.Text = "Poster of number ranges";
             this.posterLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.posterLink_LinkClicked);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel2.Location = new System.Drawing.Point(308, 358);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(192, 5);
+            this.panel2.TabIndex = 10;
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(32, 278);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(202, 77);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "The shelf order activity lets you\r\nre-organize books that are randomly \r\nplaced o" +
+    "n a shelf. The purpose is to\r\nhelp one learn the order of the dewey\r\ndecimal sys" +
+    "tem from 0 - 999";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // linkLabel1
             // 
@@ -309,6 +271,44 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
             this.linkLabel1.Text = "How to use Dewey";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel1.Location = new System.Drawing.Point(35, 358);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(192, 5);
+            this.panel1.TabIndex = 9;
+            // 
+            // callNumbersBTN
+            // 
+            this.callNumbersBTN.Image = global::Learning_Dewey_Decimals_JamesMarx_ST10114442.Properties.Resources.bo9;
+            this.callNumbersBTN.Location = new System.Drawing.Point(35, 387);
+            this.callNumbersBTN.Name = "callNumbersBTN";
+            this.callNumbersBTN.Size = new System.Drawing.Size(192, 151);
+            this.callNumbersBTN.TabIndex = 4;
+            this.callNumbersBTN.UseVisualStyleBackColor = true;
+            this.callNumbersBTN.Click += new System.EventHandler(this.callNumbersBTN_Click);
+            // 
+            // shelfOrderBTN
+            // 
+            this.shelfOrderBTN.Image = global::Learning_Dewey_Decimals_JamesMarx_ST10114442.Properties.Resources.findCN6;
+            this.shelfOrderBTN.Location = new System.Drawing.Point(308, 387);
+            this.shelfOrderBTN.Name = "shelfOrderBTN";
+            this.shelfOrderBTN.Size = new System.Drawing.Size(192, 151);
+            this.shelfOrderBTN.TabIndex = 5;
+            this.shelfOrderBTN.UseVisualStyleBackColor = true;
+            this.shelfOrderBTN.Click += new System.EventHandler(this.shelfOrderBTN_Click);
+            // 
+            // bookAreasBTN
+            // 
+            this.bookAreasBTN.Image = global::Learning_Dewey_Decimals_JamesMarx_ST10114442.Properties.Resources.LBA4;
+            this.bookAreasBTN.Location = new System.Drawing.Point(587, 387);
+            this.bookAreasBTN.Name = "bookAreasBTN";
+            this.bookAreasBTN.Size = new System.Drawing.Size(192, 151);
+            this.bookAreasBTN.TabIndex = 6;
+            this.bookAreasBTN.UseVisualStyleBackColor = true;
+            this.bookAreasBTN.Click += new System.EventHandler(this.bookAreasBTN_Click);
+            // 
             // Home_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -316,6 +316,8 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
             this.ClientSize = new System.Drawing.Size(800, 562);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel9);
+            this.MaximumSize = new System.Drawing.Size(816, 601);
+            this.MinimumSize = new System.Drawing.Size(816, 601);
             this.Name = "Home_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
