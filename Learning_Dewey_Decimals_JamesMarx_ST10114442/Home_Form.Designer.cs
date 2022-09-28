@@ -102,12 +102,13 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(644, 339);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(601, 310);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 16);
+            this.label3.Size = new System.Drawing.Size(163, 39);
             this.label3.TabIndex = 20;
-            this.label3.Text = "Coming soon!";
+            this.label3.Text = "This activity will include matching\r\ncolumns based call numbers that\r\nfit the cor" +
+    "responding book areas.";
             // 
             // label1
             // 
