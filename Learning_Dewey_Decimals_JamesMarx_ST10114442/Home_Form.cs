@@ -45,12 +45,11 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
 
         private void shelfOrderBTN_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Feature is coming soon!");
-            /*
+
             this.Hide();
-            Replacing_Books SO = new Replacing_Books();
+            Finding_CallNumbers SO = new Finding_CallNumbers();
             SO.Show();
-            */
+
         }
 
         //-----------------------------------------------------------------------\\
@@ -58,13 +57,13 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
         private void bookAreasBTN_Click(object sender, EventArgs e)
         {
 
-            MessageBox.Show("Feature is coming soon!");
+            //MessageBox.Show("Feature is coming soon!");
 
-            /*
+            
             this.Hide();
             Book_Areas BA = new Book_Areas();
             BA.Show();
-            */
+            
         }
 
         private void panel5_Paint(object sender, PaintEventArgs e)

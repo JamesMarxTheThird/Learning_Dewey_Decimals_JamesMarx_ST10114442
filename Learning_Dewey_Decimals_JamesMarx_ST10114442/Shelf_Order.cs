@@ -587,7 +587,6 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
                 timerLabel.Show();
                 timerCount = 20;
                 countDown.Start();
-
             }
             else
             {
@@ -596,13 +595,10 @@ namespace Learning_Dewey_Decimals_JamesMarx_ST10114442
                 //Clearing the listview of the current books
                 randomCN_LV.Clear();
                 BU.unsortedCallNumbers_BU.Clear();
-
                 //Reusing methods to randomly generate call numbers and draw books
                 display_book_shapes();
                 display_call_numbers();
-
             }          
-
         }
 
         /// <summary>

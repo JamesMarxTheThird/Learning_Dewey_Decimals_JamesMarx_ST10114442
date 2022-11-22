@@ -53,13 +53,20 @@
       <DependentUpon>Book_Areas.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\BasicUtilities.cs" />
-    <Compile Include="Classes\OtherCode.cs" />
-    <Compile Include="Classes\SortingAlgorithm.cs" />
+    <Compile Include="Classes\BookAreas.cs" />
+    <Compile Include="Classes\FindCN.cs" />
+    <Compile Include="Classes\SplitRightLeft.cs" />
     <Compile Include="MessageBoxes\Controls_Message.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MessageBoxes\Controls_Message.Designer.cs">
       <DependentUpon>Controls_Message.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxes\Help_Message.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxes\Help_Message.Designer.cs">
+      <DependentUpon>Help_Message.cs</DependentUpon>
     </Compile>
     <Compile Include="MessageBoxes\Instructions_Message.cs">
       <SubType>Form</SubType>
@@ -81,17 +88,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Replacing_Books.cs">
+    <Compile Include="Finding_CallNumbers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Replacing_Books.Designer.cs">
-      <DependentUpon>Replacing_Books.cs</DependentUpon>
+    <Compile Include="Finding_CallNumbers.Designer.cs">
+      <DependentUpon>Finding_CallNumbers.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Book_Areas.resx">
       <DependentUpon>Book_Areas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MessageBoxes\Controls_Message.resx">
       <DependentUpon>Controls_Message.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxes\Help_Message.resx">
+      <DependentUpon>Help_Message.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MessageBoxes\Instructions_Message.resx">
       <DependentUpon>Instructions_Message.cs</DependentUpon>
@@ -112,8 +122,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Replacing_Books.resx">
-      <DependentUpon>Replacing_Books.cs</DependentUpon>
+    <EmbeddedResource Include="Finding_CallNumbers.resx">
+      <DependentUpon>Finding_CallNumbers.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -129,9 +139,32 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\actualicon.png" />
+    <Content Include="Images\erasericon.png" />
     <Content Include="Images\homeicon.png" />
+    <Content Include="Images\new icon.png" />
     <Content Include="Images\prog3Blogo.PNG" />
+    <Content Include="Images\shelf.png" />
     <Content Include="Images\shelforder.PNG" />
+    <None Include="Resources\finalBGIPromise.png" />
+    <None Include="Resources\workingbg.png" />
+    <None Include="Resources\Untitled design %287%29.png" />
+    <None Include="Resources\Untitled design %284%292.png" />
+    <None Include="Resources\Untitled design %284%291.png" />
+    <None Include="Resources\Untitled design %286%29.png" />
+    <None Include="Resources\Untitled design %285%29.png" />
+    <None Include="Resources\Untitled design %284%29.png" />
+    <None Include="Resources\Untitled design.jpg" />
+    <None Include="Resources\Untitled design %282%292.png" />
+    <None Include="Resources\Untitled design %282%291.png" />
+    <None Include="Resources\Untitled design %282%29.png" />
+    <None Include="Resources\Untitled design %281%29.png" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\1.png" />
+    <None Include="Resources\Untitled design.png" />
+    <None Include="Resources\actualicon.png" />
+    <None Include="Resources\erasericon1.png" />
+    <None Include="Resources\erasericon.png" />
     <None Include="Resources\how2play21.PNG" />
     <None Include="Resources\how2play2.PNG" />
     <None Include="Resources\whattodo11.PNG" />

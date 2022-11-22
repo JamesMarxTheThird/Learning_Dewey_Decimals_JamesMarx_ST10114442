@@ -117,7 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="countDown.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
+  <data name="label2.Text" xml:space="preserve">
+    <value>-&gt; Press the green start button to display the randomized columns.
+
+-&gt; Left Click an item on the left page then left click the matching item on the right page.
+
+-&gt; After you have matched all 4 left items with the correct right items, click the orange tick button to check.
+
+-&gt; If you make a mistake use the blue reset button to start over.
+
+-&gt; The first button, the home, takes the user back home if they would like to play another game.
+
+-&gt; The red cross button will close the application at anytime.
+
+-&gt; The textbox and button bottom left can be used to set the timer before you start the game.</value>
+  </data>
 </root>
